@@ -10,20 +10,9 @@ import { ProductListService } from './services/product-list.service';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'mearn-task';
-  User='enter your name'
-  Email:string=''
-  p:product[]
-  constructor(private _prodService:ProductListService){
-    this.p=_prodService.products
-  }
-  reseveData(data:string){
-console.log(data);
+  constructor(){
 
   }
-  clicked(val:string){
-    // console.log(val);
-    this.User=val
 
-  }
+
   }

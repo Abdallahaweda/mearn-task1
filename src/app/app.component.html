@@ -1,41 +1,4 @@
 <app-nav></app-nav>
-<div class="container-fluid px-5 mt-2">
-  <h1 class="text-center">Hello in {{ title }}</h1>
-  <div class="d-flex align-items-center flex-column">
-    <div class="input-group justify-content-center mb-2">
-      <input type="text" #userInput class="input rounded-start p-2" />
-      <button class="btn btn-outline-dark" (click)="clicked(userInput.value)">
-        Add me
-      </button>
-    </div>
-    <input
-      type="email"
-      [(ngModel)]="Email"
-      class="input rounded p-2 w-25"
-      placeholder="Enter Your Email"
-    />
-  </div>
-  <h1 class="text-center">Hello {{ User }}</h1>
-  <h1 class="text-center" [class.text-danger]="Email.length < 5">
-    {{ Email }}
-  </h1>
 
-  <div class="container d-flex flex-row flex-wrap justify-content-center">
-    <div class="card mb-3 mx-2" style="width: 18rem" *ngFor="let product of p">
-      <img
-        [src]="product.Img"
-        class="card-img-top p-3 h-50"
-        [alt]="product.Name"
-      />
-      <div class="card-body d-flex flex-column">
-        <h5 class="card-title">Type : {{ product.Name }}</h5>
-        <p class="card-text">Price : {{ product.Price | currency : "USD" }}</p>
-        <app-rate [val]="product.rate" (event)="reseveData($event)"></app-rate>
-        <a href="#" class="btn btn-primary">Add To Cart</a>
-      </div>
-    </div>
-  </div>
-  <app-home></app-home>
-</div>
-
+<router-outlet></router-outlet>
 <app-footer></app-footer>

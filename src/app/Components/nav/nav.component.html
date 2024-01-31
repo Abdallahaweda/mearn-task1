@@ -1,6 +1,6 @@
-<nav class="navbar navbar-expand-lg bg-dark">
+<nav class="navbar navbar-expand-lg bg-dark sticky-top">
   <div class="container-fluid">
-    <a class="navbar-brand text-white" href="#">Navbar</a>
+    <a class="navbar-brand text-white">Anguler</a>
     <button
       class="navbar-toggler"
       type="button"
@@ -15,30 +15,63 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active text-white" aria-current="page" href="#"
+          <a
+            class="nav-link active text-white"
+            aria-current="page"
+            routerLink="/home"
+            routerLinkActive="active  "
             >Home</a
           >
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="#"
-            >Purshase '{{ cartNumber }}'</a
+          <a
+            class="nav-link active text-white"
+            aria-current="page"
+            routerLink="/static-products"
+            routerLinkActive="active  "
+            >Static Products</a
           >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link active text-white"
+            aria-current="page"
+            routerLink="/products"
+            routerLinkActive="active  "
+            >Products</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white">Purshase '{{ cartNumber }}'</a>
         </li>
         <li class="nav-item dropdown">
           <a
             class="nav-link dropdown-toggle text-white"
-            href="#"
             role="button"
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            Dropdown
+            Join Us
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li>
+              <a
+                class="dropdown-item"
+                routerLink="/login"
+                routerLinkActive="active  "
+                >Login</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                routerLink="/register"
+                routerLinkActive="active  "
+                >Register</a
+              >
+            </li>
             <li><hr class="dropdown-divider" /></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
           </ul>
         </li>
         <li class="nav-item">

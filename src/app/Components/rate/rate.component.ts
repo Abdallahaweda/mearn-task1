@@ -14,4 +14,5 @@ rate(val:string){
 this.event.emit(val)
 
 }
+
 }

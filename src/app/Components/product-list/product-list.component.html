@@ -1,0 +1,27 @@
+<div class="container-fluid px-5 mt-2">
+  <div class="container d-flex flex-row flex-wrap justify-content-center">
+    <div
+      class="card mb-3 mx-2"
+      style="width: 18rem"
+      *ngFor="let product of list"
+    >
+      <img
+        [src]="product.imgURL"
+        class="card-img-top p-3 h-50"
+        [alt]="product.name"
+      />
+      <div class="card-body d-flex flex-column">
+        <h5 class="card-title">Type : {{ product.name }}</h5>
+        <p class="card-text">Price : {{ product.price }}$</p>
+        <p class="card-text">Available : {{ product.quantity }}</p>
+        <!-- <app-rate [val]="product.rate" (event)="reseveData($event)"></app-rate> -->
+        <div>
+          <!-- <a class="btn btn-primary mx-2" (click)="addProduct(product)">Add To Cart</a> -->
+          <a class="btn btn-primary" [routerLink]="['/detials', product._id]"
+            >Details</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

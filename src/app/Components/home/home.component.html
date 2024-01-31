@@ -1,1 +1,20 @@
 <p class="bg-dark text-white">home works!</p>
+<h1 class="text-center">Hello in {{ title }}</h1>
+<div class="d-flex align-items-center flex-column">
+  <div class="input-group justify-content-center mb-2">
+    <input type="text" #userInput class="input rounded-start p-2" />
+    <button class="btn btn-outline-dark" (click)="clicked(userInput.value)">
+      Add me
+    </button>
+  </div>
+  <input
+    type="email"
+    [(ngModel)]="Email"
+    class="input rounded p-2 w-25"
+    placeholder="Enter Your Email"
+  />
+</div>
+<h1 class="text-center">Hello {{ User }}</h1>
+<h1 class="text-center" [class.text-danger]="Email.length < 5">
+  {{ Email }}
+</h1>

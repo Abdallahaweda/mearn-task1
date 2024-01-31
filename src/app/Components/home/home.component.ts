@@ -7,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
+  User='enter your name'
+  Email:string=''
+  title = 'mearn-task';
 
+  clicked(val:string){
+    // console.log(val);
+    this.User=val
+
+  }
 }

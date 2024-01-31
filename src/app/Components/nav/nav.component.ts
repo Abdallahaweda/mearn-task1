@@ -14,6 +14,11 @@ productNumber=0
 cartNumber=0
 constructor(private _prodNum:ProductListService,private _cartNum:CartListService){
 this.productNumber=this._prodNum.products.length
-this.cartNumber=this._cartNum.userCart.length
+let obj=this._cartNum.cartSubject.subscribe((value)=>{
+  console.log(value);
+  this.cartNumber=value.length
+
+})
+// obj.unsubscribe()
 }
 }
