@@ -1,46 +1,48 @@
 <div class="container-fluid mt-3 d-flex align-items-center">
   <div class="container justify-content-center d-flex">
     <!-- <form (ngSubmit)="send()"> -->
-    <div class="mb-3">
-      <label for="exampleInputEmail" class="form-label">User Name</label>
-      <input
-        type="text"
-        id="exampleInputEmail"
-        class="form-control"
-        [(ngModel)]="user.name"
-      />
-    </div>
-    <div class="mb-3">
-      <label for="exampleInputEmail2" class="form-label">Phone Number</label>
-      <input
-        type="text"
-        id="exampleInputEmail2"
-        class="form-control"
-        [(ngModel)]="user.phoneNumber"
-      />
-    </div>
-    <div class="mb-3">
-      <label for="exampleInputEmail1" class="form-label">Email</label>
-      <input
-        type="email"
-        id="exampleInputEmail1"
-        class="form-control"
-        [(ngModel)]="user.email"
-      />
-    </div>
-    <div class="mb-3">
-      <label for="exampleInputPassword1" class="form-label">Password</label>
-      <input
-        type="password"
-        id="exampleInputPassword1"
-        class="form-control"
-        [(ngModel)]="user.password"
-      />
-    </div>
+    <div>
+      <div class="mb-3">
+        <label for="exampleInputEmail" class="form-label">User Name</label>
+        <input
+          type="text"
+          id="exampleInputEmail"
+          class="form-control"
+          [(ngModel)]="user.name"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail2" class="form-label">Phone Number</label>
+        <input
+          type="text"
+          id="exampleInputEmail2"
+          class="form-control"
+          [(ngModel)]="user.phoneNumber"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email</label>
+        <input
+          type="email"
+          id="exampleInputEmail1"
+          class="form-control"
+          [(ngModel)]="user.email"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input
+          type="password"
+          id="exampleInputPassword1"
+          class="form-control"
+          [(ngModel)]="user.password"
+        />
+      </div>
 
-    <button type="button" (click)="send()" class="btn btn-primary">
-      Submit
-    </button>
-    <!-- </form> -->
+      <button type="button" (click)="send()" class="btn btn-primary">
+        Submit
+      </button>
+      <!-- </form> -->
+    </div>
   </div>
 </div>
