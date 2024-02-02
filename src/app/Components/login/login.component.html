@@ -1,13 +1,15 @@
 <div class="container-fluid mt-3 d-flex align-items-center">
   <div class="container justify-content-center d-flex">
-    <form>
+    <!-- <form> -->
+    <div>
       <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">User Name</label>
+        <label for="exampleInputEmail1" class="form-label">Email</label>
         <input
           type="text"
           class="form-control"
           id="exampleInputEmail1"
           aria-describedby="emailHelp"
+          [(ngModel)]="user.email"
         />
       </div>
       <div class="mb-3">
@@ -16,10 +18,12 @@
           type="password"
           class="form-control"
           id="exampleInputPassword1"
+          [(ngModel)]="user.password"
         />
       </div>
 
       <button (click)="logIn()" class="btn btn-primary">Submit</button>
-    </form>
+      <!-- </form> -->
+    </div>
   </div>
 </div>

@@ -8,15 +8,16 @@ import { NotFoundError } from 'rxjs';
 import { NotFoundComponent } from './Components/not-found/not-found.component';
 import { ProductDetialsComponent } from './Components/product-detials/product-detials.component';
 import { ProductListComponent } from './Components/product-list/product-list.component';
+import { AddProductComponent } from './Components/add-product/add-product.component';
 
 export const routes: Routes = [
-  {path:'',redirectTo:'home',pathMatch:'full'},
-  {path:'home',component:HomeComponent},
-  {path:'static-products',component:ProductsComponent},
-  {path:'products',component:ProductListComponent},
-  {path:'login',component:LoginComponent},
-  {path:'register',component:RegisterComponent},
-  {path:'detials/:id',component:ProductDetialsComponent},
-  {path:'**',component:NotFoundComponent},
-
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent },
+  { path: 'static-products', component: ProductsComponent },
+  { path: 'products', component: ProductListComponent },
+  { path: 'add-product', component: AddProductComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'register', component: RegisterComponent },
+  { path: 'detials/:id', component: ProductDetialsComponent },
+  { path: '**', component: NotFoundComponent },
 ];

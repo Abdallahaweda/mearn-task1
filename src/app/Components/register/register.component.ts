@@ -24,7 +24,7 @@ export class RegisterComponent {
       next: (response) => {
         if (response.success == true) {
           alert(response.message);
-          this.router.navigateByUrl('/login');
+          this.router.navigateByUrl('/user/login');
         } else {
           alert(response.message);
         }
